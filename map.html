@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b6bbcf0103429a814b76b70c2b6852f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b6bbcf0103429a814b76b70c2b6852f7" ></div>
+        
+</body>
+<script>    
+    
+            var map_b6bbcf0103429a814b76b70c2b6852f7 = L.map(
+                "map_b6bbcf0103429a814b76b70c2b6852f7",
+                {
+                    center: [48.8588897, 2.3200410217200766],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f1f8637fe08520e721c79ca4c3acbcc5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b6bbcf0103429a814b76b70c2b6852f7);
+        
+    
+            var tile_layer_a5403f86388604465b01213306fdac12 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b6bbcf0103429a814b76b70c2b6852f7);
+        
+    
+            var marker_8b5941d985a6c09bfc5990099b177cbc = L.marker(
+                [48.8603483, 2.3440535],
+                {}
+            ).addTo(map_b6bbcf0103429a814b76b70c2b6852f7);
+        
+    
+            var beautify_icon_31883aa9df20a88f5a262e3f3de1993a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "red"}
+            )
+            marker_8b5941d985a6c09bfc5990099b177cbc.setIcon(beautify_icon_31883aa9df20a88f5a262e3f3de1993a);
+        
+    
+        var popup_d0b64b25b78e3b4003c327217282ec5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd21a996efe4e9b1df6e4a3dfcfcf3cf = $(`<div id="html_bd21a996efe4e9b1df6e4a3dfcfcf3cf" style="width: 100.0%; height: 100.0%;">Best Western Ducs de Bourgogne</div>`)[0];
+            popup_d0b64b25b78e3b4003c327217282ec5c.setContent(html_bd21a996efe4e9b1df6e4a3dfcfcf3cf);
+        
+
+        marker_8b5941d985a6c09bfc5990099b177cbc.bindPopup(popup_d0b64b25b78e3b4003c327217282ec5c)
+        ;
+
+        
+    
+    
+            marker_8b5941d985a6c09bfc5990099b177cbc.bindTooltip(
+                `<div>
+                     Best Western Ducs de Bourgogne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb192fc2b251174a9d228fe55cead678 = L.marker(
+                [48.8717146, 2.3261812],
+                {}
+            ).addTo(map_b6bbcf0103429a814b76b70c2b6852f7);
+        
+    
+            var beautify_icon_b6befa4f2276fbb062b7f9c0e5c52da1 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "red"}
+            )
+            marker_cb192fc2b251174a9d228fe55cead678.setIcon(beautify_icon_b6befa4f2276fbb062b7f9c0e5c52da1);
+        
+    
+        var popup_8d911fd3f1ae86e9a2418f50041b81ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5feb8589e638d0ff0ff6d50588226333 = $(`<div id="html_5feb8589e638d0ff0ff6d50588226333" style="width: 100.0%; height: 100.0%;">Hotel Vignon</div>`)[0];
+            popup_8d911fd3f1ae86e9a2418f50041b81ff.setContent(html_5feb8589e638d0ff0ff6d50588226333);
+        
+
+        marker_cb192fc2b251174a9d228fe55cead678.bindPopup(popup_8d911fd3f1ae86e9a2418f50041b81ff)
+        ;
+
+        
+    
+    
+            marker_cb192fc2b251174a9d228fe55cead678.bindTooltip(
+                `<div>
+                     Hotel Vignon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b7ee2d000269137d66e2d30bc0e5d4c = L.marker(
+                [48.8692566, 2.3339369],
+                {}
+            ).addTo(map_b6bbcf0103429a814b76b70c2b6852f7);
+        
+    
+            var beautify_icon_5a7eb4616ae358e2d8d7e7b6a4db7c9b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "red"}
+            )
+            marker_9b7ee2d000269137d66e2d30bc0e5d4c.setIcon(beautify_icon_5a7eb4616ae358e2d8d7e7b6a4db7c9b);
+        
+    
+        var popup_02de3a57766c35ce2ef46a8f771fc253 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbdde83884d336dd63d16ecbc6eccd70 = $(`<div id="html_bbdde83884d336dd63d16ecbc6eccd70" style="width: 100.0%; height: 100.0%;">Hotel France d Antin Op ra</div>`)[0];
+            popup_02de3a57766c35ce2ef46a8f771fc253.setContent(html_bbdde83884d336dd63d16ecbc6eccd70);
+        
+
+        marker_9b7ee2d000269137d66e2d30bc0e5d4c.bindPopup(popup_02de3a57766c35ce2ef46a8f771fc253)
+        ;
+
+        
+    
+    
+            marker_9b7ee2d000269137d66e2d30bc0e5d4c.bindTooltip(
+                `<div>
+                     Hotel France d Antin Op ra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a81c1954785c0763618fa975f902ff6f = L.marker(
+                [48.8654726, 2.3292934],
+                {}
+            ).addTo(map_b6bbcf0103429a814b76b70c2b6852f7);
+        
+    
+            var beautify_icon_d531ff5ac014182df25d95640f15a033 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "red"}
+            )
+            marker_a81c1954785c0763618fa975f902ff6f.setIcon(beautify_icon_d531ff5ac014182df25d95640f15a033);
+        
+    
+        var popup_a704d2ce159fbba24df2609be8941e6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2efcf183a7d9dd69f50565bf2d07f5dc = $(`<div id="html_2efcf183a7d9dd69f50565bf2d07f5dc" style="width: 100.0%; height: 100.0%;">Hotel Duminy Vendome</div>`)[0];
+            popup_a704d2ce159fbba24df2609be8941e6f.setContent(html_2efcf183a7d9dd69f50565bf2d07f5dc);
+        
+
+        marker_a81c1954785c0763618fa975f902ff6f.bindPopup(popup_a704d2ce159fbba24df2609be8941e6f)
+        ;
+
+        
+    
+    
+            marker_a81c1954785c0763618fa975f902ff6f.bindTooltip(
+                `<div>
+                     Hotel Duminy Vendome
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18f6588f55633ce7a7a3a7a3b8df4dde = L.marker(
+                [48.8658792, 2.3298903],
+                {}
+            ).addTo(map_b6bbcf0103429a814b76b70c2b6852f7);
+        
+    
+            var beautify_icon_b987fe6d3f238a5a07c8b326a0941c21 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "red"}
+            )
+            marker_18f6588f55633ce7a7a3a7a3b8df4dde.setIcon(beautify_icon_b987fe6d3f238a5a07c8b326a0941c21);
+        
+    
+        var popup_81029b1a5f53b270f797d6da060ad521 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbd20695d08256bc86811df7ff78927f = $(`<div id="html_dbd20695d08256bc86811df7ff78927f" style="width: 100.0%; height: 100.0%;">Royal Saint Honore</div>`)[0];
+            popup_81029b1a5f53b270f797d6da060ad521.setContent(html_dbd20695d08256bc86811df7ff78927f);
+        
+
+        marker_18f6588f55633ce7a7a3a7a3b8df4dde.bindPopup(popup_81029b1a5f53b270f797d6da060ad521)
+        ;
+
+        
+    
+    
+            marker_18f6588f55633ce7a7a3a7a3b8df4dde.bindTooltip(
+                `<div>
+                     Royal Saint Honore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72c0f5f9b447083bf4ed854400cb11fd = L.marker(
+                [48.8687425, 2.3541761],
+                {}
+            ).addTo(map_b6bbcf0103429a814b76b70c2b6852f7);
+        
+    
+            var beautify_icon_1659d880cdf457e4f670b8654b1b7963 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 6, "textColor": "red"}
+            )
+            marker_72c0f5f9b447083bf4ed854400cb11fd.setIcon(beautify_icon_1659d880cdf457e4f670b8654b1b7963);
+        
+    
+        var popup_428a9bcff6f33f6a9f8e4dd82a173402 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45db1d3b5dc0a3e23142b2647ad661d7 = $(`<div id="html_45db1d3b5dc0a3e23142b2647ad661d7" style="width: 100.0%; height: 100.0%;">Best Western Premier Marais Grands Boulevards</div>`)[0];
+            popup_428a9bcff6f33f6a9f8e4dd82a173402.setContent(html_45db1d3b5dc0a3e23142b2647ad661d7);
+        
+
+        marker_72c0f5f9b447083bf4ed854400cb11fd.bindPopup(popup_428a9bcff6f33f6a9f8e4dd82a173402)
+        ;
+
+        
+    
+    
+            marker_72c0f5f9b447083bf4ed854400cb11fd.bindTooltip(
+                `<div>
+                     Best Western Premier Marais Grands Boulevards
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75cab578e01145a99f16709e7037243f = L.marker(
+                [48.8420669, 2.3304091],
+                {}
+            ).addTo(map_b6bbcf0103429a814b76b70c2b6852f7);
+        
+    
+            var beautify_icon_8e5059db55ff78370cbba8edd30cc943 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 7, "textColor": "red"}
+            )
+            marker_75cab578e01145a99f16709e7037243f.setIcon(beautify_icon_8e5059db55ff78370cbba8edd30cc943);
+        
+    
+        var popup_bac9a8bd962081bf9dcd7928f7f651d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b44ce73f0bfc05f803d8a180cc523fd = $(`<div id="html_5b44ce73f0bfc05f803d8a180cc523fd" style="width: 100.0%; height: 100.0%;">Hotel des Academies et des Arts</div>`)[0];
+            popup_bac9a8bd962081bf9dcd7928f7f651d9.setContent(html_5b44ce73f0bfc05f803d8a180cc523fd);
+        
+
+        marker_75cab578e01145a99f16709e7037243f.bindPopup(popup_bac9a8bd962081bf9dcd7928f7f651d9)
+        ;
+
+        
+    
+    
+            marker_75cab578e01145a99f16709e7037243f.bindTooltip(
+                `<div>
+                     Hotel des Academies et des Arts
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02d04493b2beac0961d1ace40007487c = L.marker(
+                [48.8632723, 2.352691],
+                {}
+            ).addTo(map_b6bbcf0103429a814b76b70c2b6852f7);
+        
+    
+            var beautify_icon_4697293f38a86092ad8942e33acee5db = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 8, "textColor": "red"}
+            )
+            marker_02d04493b2beac0961d1ace40007487c.setIcon(beautify_icon_4697293f38a86092ad8942e33acee5db);
+        
+    
+        var popup_7a5bee31aadc28c8ca56fe3d02c4267a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6171c549eedba3889c9edd801398c547 = $(`<div id="html_6171c549eedba3889c9edd801398c547" style="width: 100.0%; height: 100.0%;">Hotel Georgette</div>`)[0];
+            popup_7a5bee31aadc28c8ca56fe3d02c4267a.setContent(html_6171c549eedba3889c9edd801398c547);
+        
+
+        marker_02d04493b2beac0961d1ace40007487c.bindPopup(popup_7a5bee31aadc28c8ca56fe3d02c4267a)
+        ;
+
+        
+    
+    
+            marker_02d04493b2beac0961d1ace40007487c.bindTooltip(
+                `<div>
+                     Hotel Georgette
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5bd8115549683825feec5af44cbd3fe = L.marker(
+                [48.8488044, 2.3469889],
+                {}
+            ).addTo(map_b6bbcf0103429a814b76b70c2b6852f7);
+        
+    
+            var beautify_icon_eec78f5a5bd6810474302b952ef773ed = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 9, "textColor": "red"}
+            )
+            marker_d5bd8115549683825feec5af44cbd3fe.setIcon(beautify_icon_eec78f5a5bd6810474302b952ef773ed);
+        
+    
+        var popup_1016732aef9863cb0e459fa7c213c894 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e20e3aafc950301f546c5b04c028d12e = $(`<div id="html_e20e3aafc950301f546c5b04c028d12e" style="width: 100.0%; height: 100.0%;">Villa Panth on</div>`)[0];
+            popup_1016732aef9863cb0e459fa7c213c894.setContent(html_e20e3aafc950301f546c5b04c028d12e);
+        
+
+        marker_d5bd8115549683825feec5af44cbd3fe.bindPopup(popup_1016732aef9863cb0e459fa7c213c894)
+        ;
+
+        
+    
+    
+            marker_d5bd8115549683825feec5af44cbd3fe.bindTooltip(
+                `<div>
+                     Villa Panth on
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60ccff829d8e754e9fe32e393eb021ad = L.marker(
+                [48.8589516, 2.3670407],
+                {}
+            ).addTo(map_b6bbcf0103429a814b76b70c2b6852f7);
+        
+    
+            var beautify_icon_bebc0ec739038cebb3782786c641024e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 10, "textColor": "red"}
+            )
+            marker_60ccff829d8e754e9fe32e393eb021ad.setIcon(beautify_icon_bebc0ec739038cebb3782786c641024e);
+        
+    
+        var popup_88e0a88a6491632a074d15beb2632bc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_251e5daa24ac7e55f743ff4c80666f69 = $(`<div id="html_251e5daa24ac7e55f743ff4c80666f69" style="width: 100.0%; height: 100.0%;">Villa Beaumarchais</div>`)[0];
+            popup_88e0a88a6491632a074d15beb2632bc2.setContent(html_251e5daa24ac7e55f743ff4c80666f69);
+        
+
+        marker_60ccff829d8e754e9fe32e393eb021ad.bindPopup(popup_88e0a88a6491632a074d15beb2632bc2)
+        ;
+
+        
+    
+    
+            marker_60ccff829d8e754e9fe32e393eb021ad.bindTooltip(
+                `<div>
+                     Villa Beaumarchais
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
